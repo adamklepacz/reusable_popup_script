@@ -1,0 +1,33 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.popup {
+  display: none;
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  position: fixed;
+  width: 80vh;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
+
+.body-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  transition: all 0.5s ease;
+}

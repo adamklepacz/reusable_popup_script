@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple modal</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+  <div class="container">
+    <article class="main-article">
+      <h2 class="main-article__heading">Simple modal/popup script</h2>
+      <p class="main-article__description">You can use this script within your site to create simple modal or popup which has to be assigned to a cookie. You can simply set up expire date.</p>
+      <span>Author:</span><strong>Adam Klepacz</strong>
+      <span>Version:</span><strong>v.0.1</strong>
+    </article>
+  </div>
+
+  <!-- Your modal / popup below -->
+  <div class="popup" data-id="popup">
+    <button class="close-button" data-id="close-button">x</button>
+    <p class="popup__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet fuga, eum necessitatibus, excepturi id itaque dolore vero, quos beatae earum facilis reiciendis consequatur laudantium a cupiditate quasi. Ratione, fugit voluptas.</p>
+    <button class="main-button" data-id="agree-button">I Agree</button>
+  </div>
+
+  <!-- body overlay div -->
+  <div data-id="body-overlay">
+  </div>
+
+  <!-- Attach jquery before your script!! -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
