@@ -1,17 +1,23 @@
+body {
+  background-color: #A8DBA8;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
+  padding-top: 100px;
 }
 
 .popup {
   display: none;
-  border: 1px solid gray;
-  background-color: lightgray;
-  padding: 20px;
+  background-color: #F4EB9E;
+  box-shadow: 5px 5px 32px 0px rgba(0, 0, 0, 0.52);
+  padding: 32px;
   font-size: 16px;
   font-weight: 400;
   position: fixed;
-  width: 80vh;
   height: auto;
   left: 50%;
   top: 50%;
@@ -19,6 +25,7 @@
   text-align: left;
   z-index: 1;
   transition: all 0.5s ease;
+  max-width: 450px;
 }
 
 
@@ -30,4 +37,37 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, .5);
   transition: all 0.5s ease;
+}
+
+
+
+.main-article {
+  background-color: #F4EB9E;
+  max-width: 450px;
+  height: auto;
+  margin: 0 auto;
+  padding: 32px;
+  box-shadow: 5px 5px 32px 0px rgba(0, 0, 0, 0.52);
+}
+
+.main-article__heading {
+  margin: 0;
+  padding: 0;
+}
+
+.close-button {
+  display: block;
+  background-color: #D0DFBB;
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+
+}
+
+.main-button {
+  display: block;
+  background-color: #D0DFBB;
+  border: 0;
+  padding: 8px 32px;
+  border-radius: 7px;
 }
